@@ -17,7 +17,7 @@ public class LRUMap<K, V> {
 
     public LRUMap(final int maxSize) {
         if (maxSize <= 0)
-            throw new IllegalArgumentException("size should at least be 1");
+            throw new IllegalArgumentException("size should be at least 1");
         backingMap = new HashMap<>();
         this.maxSize = maxSize;
     }
